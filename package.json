@@ -1,0 +1,46 @@
+{
+  "name": "@yhfu/rxjs-tapable",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "publish": "pnpm publish --no-git-checks"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "prettier": "^3.0.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1",
+    "vite-plugin-dts": "^3.6.2"
+  },
+  "main": "./dist/rxjs-tapable.umd.cjs",
+  "module": "./dist/rxjs-tapable.js",
+  "types": "./dist/rxjs-tapable.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/rxjs-tapable.js",
+      "require": "./dist/rxjs-tapable.umd.cjs"
+    }
+  },
+  "files": [
+    "./dist"
+  ],
+  "keywords": [
+    "rxjs",
+    "tapable"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "yhfu",
+    "email": "yhfu@stu.xidian.edu.cn"
+  },
+  "repository": {
+    "url": "https://github.com/XDUyhfu/rxjs-tapable"
+  }
+}
